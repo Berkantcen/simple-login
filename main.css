@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+/* LOGIN FORM  */
+
+.login-form.active {
+  background-color: #fff;
+  margin: 0px 20px;
+  padding: 50px 20px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 6px 3px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.login-form {
+  display: none;
+}
+
+.login-form h2 {
+  font-size: 3rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+input {
+  max-width: 50%;
+  border: 1px solid #333;
+  margin: 0 auto;
+  height: 2rem;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.login-form button {
+  align-self: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 20px 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.login-form button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.message {
+  display: none;
+  color: red;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.message.active {
+  display: block;
+}
+
+/* True Login */
+.login-true {
+  display: none;
+  margin: 10px;
+  padding: 20px;
+}
+
+.login-true.active {
+  display: block;
+}
+.login-true h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-true h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.login-true p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
